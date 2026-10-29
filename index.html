@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Adavala Sai Teja | Aspiring Penetration Tester</title>
+  <meta name="description" content="Adavala Sai Teja – cybersecurity student seeking a penetration testing / red team internship. Security tools, CTFs and certifications." />
+  <meta name="theme-color" content="#ffffff" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <canvas class="cyber-canvas" aria-hidden="true"></canvas>
+  <header class="nav">
+    <a class="logo" href="#top">Sai Teja</a>
+    <button class="menu-btn" aria-label="Toggle menu" aria-controls="menu" aria-expanded="false">☰</button>
+    <nav id="menu" aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#ctf">CTFs &amp; Labs</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a class="nav-cta" href="resume.pdf" download>Resume</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <p class="eyebrow">Cybersecurity student · Hyderabad, India</p>
+      <h1>Adavala Sai Teja</h1>
+      <p class="role">Aspiring Penetration Tester</p>
+      <p class="lead">I build security tools in Python and practice offensive security through CTFs, TryHackMe and Hack The Box. I'm looking for a penetration testing or red team internship where I can learn from real engagements and contribute from day one.</p>
+      <div class="cta">
+        <a class="btn primary" href="resume.pdf" download>Download resume</a>
+        <a class="btn" href="#projects">View projects</a>
+        <a class="btn ghost" href="#contact">Contact me</a>
+      </div>
+      <dl class="stats">
+        <div><dt>B.Tech GPA</dt><dd>8.43</dd></div>
+        <div><dt>Security projects</dt><dd>3</dd></div>
+        <div><dt>CTFs played</dt><dd>3</dd></div>
+        <div><dt>Certifications</dt><dd>3</dd></div>
+      </dl>
+    </section>
+
+    <section id="about" class="reveal">
+      <h2>About</h2>
+      <div class="grid two">
+        <p>I'm a B.Tech Computer Science (Cyber Security) student at the Institute of Aeronautical Engineering, Hyderabad, graduating in May 2027. I began with a diploma in Computer Science and moved into security through hands-on practice: vulnerability assessment, ethical hacking and log analysis.</p>
+        <p>My focus is penetration testing. I like understanding how systems break, whether that's a web application, an exposed port or a misconfigured Active Directory, and writing tools that make those checks repeatable. I also build Blue Team tooling, which helps me see attacks from the defender's side.</p>
+      </div>
+    </section>
+
+    <section id="projects" class="reveal">
+      <h2>Projects</h2>
+      <div class="grid cards">
+        <article class="card project">
+          <h3>PathFinder AD</h3>
+          <p class="kicker">Active Directory attack-path analysis</p>
+          <p>Analyzes Active Directory configurations to find risky settings, excessive permissions and potential attack paths, then organizes evidence-based findings with remediation recommendations.</p>
+          <div class="tags"><span>Python</span><span>Flask</span><span>NetworkX</span><span>JSON</span><span>Pytest</span></div>
+          <a class="link" href="https://github.com/sai1476/PathFinder-AD" target="_blank" rel="noopener">View on GitHub →</a>
+        </article>
+        <article class="card project">
+          <h3>Web Vulnerability Scanner</h3>
+          <p class="kicker">Automated web security checks</p>
+          <p>Automates port scanning, HTTP header analysis and security-header detection, with SQL injection testing to surface potential weaknesses in web applications.</p>
+          <div class="tags"><span>Python</span><span>Sockets</span><span>Requests</span></div>
+          <a class="link" href="https://github.com/sai1476/Web-Vulnerability-Scanner" target="_blank" rel="noopener">View on GitHub →</a>
+        </article>
+        <article class="card project">
+          <h3>SentinelScope</h3>
+          <p class="kicker">Blue Team log analysis</p>
+          <p>Analyzes logs for suspicious activity such as repeated failed logins. Supports alert severity, investigation status tracking, evidence-based findings and report export.</p>
+          <div class="tags"><span>Python</span><span>Flask</span><span>Pandas</span><span>SQLite</span><span>Pytest</span></div>
+          <a class="link" href="https://github.com/sai1476/SentinelScope" target="_blank" rel="noopener">View on GitHub →</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="reveal">
+      <h2>Skills</h2>
+      <div class="grid cards">
+        <article class="card"><h3>Offensive security</h3><div class="tags"><span>Nmap</span><span>Metasploit</span><span>Burp Suite</span><span>Wireshark</span></div></article>
+        <article class="card"><h3>Programming</h3><div class="tags"><span>Python</span><span>C</span><span>SQL</span></div></article>
+        <article class="card"><h3>Web</h3><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Flask</span></div></article>
+        <article class="card"><h3>Operating systems</h3><div class="tags"><span>Kali Linux</span><span>Ubuntu</span><span>Windows</span></div></article>
+        <article class="card"><h3>CTF categories</h3><div class="tags"><span>Web exploitation</span><span>Cryptography</span><span>Forensics</span><span>Reverse engineering</span><span>OSINT</span></div></article>
+        <article class="card"><h3>Also learning</h3><div class="tags"><span>AWS Cloud fundamentals</span><span>Machine Learning basics</span></div></article>
+      </div>
+    </section>
+
+    <section id="ctf" class="reveal">
+      <h2>CTFs &amp; Labs</h2>
+      <ul class="timeline">
+        <li><strong>Breach Point CTF Season 2</strong><span>36-hour national-level CTF covering web exploitation, cryptography, forensics, reverse engineering and OSINT.</span></li>
+        <li><strong>CyberGeek'26</strong><span>CTF organized by GeekHaven under Aparoksha at IIIT Allahabad.</span></li>
+        <li><strong>Dark-CTF 2026</strong><span>CTF organized by the Crack-On Community.</span></li>
+        <li><strong>TryHackMe &amp; Hack The Box</strong><span>Ongoing hands-on practice. <a href="https://tryhackme.com/p/Saiteja4" target="_blank" rel="noopener">TryHackMe profile</a> · <a href="https://profile.hackthebox.com/profile/019c8b80-d6b3-722d-88d1-dc1a1d41a603" target="_blank" rel="noopener">Hack The Box profile</a></span></li>
+      </ul>
+    </section>
+
+    <section id="experience" class="reveal">
+      <h2>Experience &amp; Certifications</h2>
+      <div class="grid two">
+        <div>
+          <h3 class="sub">Experience</h3>
+          <ul class="timeline">
+            <li><strong>Cybersecurity Intern · Codec Technologies Pvt. Ltd.</strong><em>May 2025</em><span>Exposure to vulnerability assessment, security monitoring, risk mitigation and incident analysis.</span></li>
+            <li><strong>Industrial Training · NSIC</strong><em>June 2024</em><span>Training in AWS, Big Data, Python and Data Science, covering cloud services and data analysis.</span></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="sub">Certifications</h3>
+          <ul class="timeline">
+            <li><strong>Cisco · Junior Cybersecurity Analyst</strong><span><a href="https://www.credly.com/badges/455ddbe9-6eb2-4ecf-9944-4f5e49ff4401/linked_in_profile" target="_blank" rel="noopener">Verify on Credly</a></span></li>
+            <li><strong>Cisco · Ethical Hacker</strong><span><a href="https://www.credly.com/badges/09e794b6-101b-45da-a400-9b0629f6aff0/linked_in_profile" target="_blank" rel="noopener">Verify on Credly</a></span></li>
+            <li><strong>CyberWarFare Labs · C3SA</strong><span>Certified Cyber Security Analyst</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="reveal">
+      <h2>Education</h2>
+      <ul class="timeline">
+        <li><strong>B.Tech, Computer Science Engineering (Cyber Security)</strong><em>Expected May 2027</em><span>Institute of Aeronautical Engineering, Hyderabad · GPA 8.43 / 10</span></li>
+        <li><strong>Diploma, Computer Science Engineering</strong><em>2021 – 2024</em><span>Kshatriya College of Engineering, Armoor · GPA 9.32 / 10</span></li>
+        <li><strong>Secondary School Certificate (SSC)</strong><em>2021</em><span>Little Flower High School, Pochampad · GPA 10 / 10</span></li>
+      </ul>
+    </section>
+
+    <section id="contact" class="reveal contact">
+      <h2>Let's connect</h2>
+      <p class="lead">I'm open to penetration testing and red team internships. The fastest way to reach me is email.</p>
+      <div class="cta">
+        <a class="btn primary" href="mailto:saitejaadavala@gmail.com">saitejaadavala@gmail.com</a>
+        <a class="btn" href="https://www.linkedin.com/in/saitejaadavala1476/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="https://github.com/sai1476" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn" href="resume.pdf" download>Resume (PDF)</a>
+      </div>
+    </section>
+  </main>
+
+  <footer><p>© <span id="year"></span> Adavala Sai Teja</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>
